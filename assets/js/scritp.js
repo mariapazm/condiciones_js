@@ -1,4 +1,7 @@
-borde = document.querySelector('cuello')
-borde.onclick= function(){
-borde.style.borderWidth= '2px'    
+/*function borde() {
+    value = document.querySelector('img').value
+    if (value.style.borderWidth = 0)
 }
+
+
+    */
