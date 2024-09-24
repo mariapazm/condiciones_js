@@ -28,13 +28,14 @@
             valorMo = document.querySelector('#morado').value
             valorRo= document.querySelector('#rosa').value
             valorTotal =  Number(valorAm) + Number(valorMo) + Number(valorRo)
-            if ( valorTotal <= 10) {
+            if ( valorTotal <=10) {
                 p = document.querySelector('p')
-                p.innerHTML = 'Llevas'
+                p.innerHTML = 'Llevas ' + valorTotal + ' stikers'
             }
+     
             else {
                 p = document.querySelector('p')
-                p.innerHTML = 'Llevas demasiados stikers'
+                p.innerHTML = 'Levas demasiados stikers'
             }
             ">Verificar</button>
              <p></p>
