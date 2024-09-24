@@ -8,32 +8,38 @@
 </head>
 <body>
     <section>
-        <div class="emojis">
-            <img src="assets/img/lana_corazon.svg" alt="">
-            <form class="corazon" action="">
-                <input type="text">
-                <button>Verificar</button>
-            </form>
-        </div>
-
-       <div class="emojis">
-        <img src="assets/img/lanas.svg" alt="">
         <form class="corazon" action="">
-            <input type="text">
-            <button>Verificar</button>
+            <div class="container" >
+                <figure class="emojis">
+                    <img src="assets/img/lana_corazon.svg" alt="">
+                        <input id="amarillo" type="text">
+                </figure>
+                <figure class="emojis">
+                    <img src="assets/img/lanas.svg" alt="">
+                        <input id="morado" type="text">
+                </figure>
+                <figure class="emojis">
+                    <img src="assets/img/ovillo.svg" alt="">
+                        <input id="rosa" type="text">
+                </figure>
+            </div>
+            <button type="button" onclick="
+            valorAm = document.querySelector('#amarillo').value
+            valorMo = document.querySelector('#morado').value
+            valorRo= document.querySelector('#rosa').value
+            valorTotal =  Number(valorAm) + Number(valorMo) + Number(valorRo)
+            if ( valorTotal <= 10) {
+                p = document.querySelector('p')
+                p.innerHTML = 'Llevas'
+            }
+            else {
+                p = document.querySelector('p')
+                p.innerHTML = 'Llevas demasiados stikers'
+            }
+            ">Verificar</button>
+             <p></p>
+            
         </form>
-       </div>
-
-       <div class="emojis">
-        <img src="assets/img/ovillo.svg" alt="">
-        <form class="corazon" action="">
-            <input type="text">
-            <button>Verificar</button>
-        </form>
-       </div>
-        
-       
-       
     </section>
     
 </body>

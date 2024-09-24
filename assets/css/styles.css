@@ -4,8 +4,10 @@ body {
 }
 
 img{
-    height: 25%%;
-
+    object-fit: scale-down;
+    height: 16em;
+    padding-bottom: 0.5rem;
+    width: 22em;
 }
 
 section{
@@ -17,14 +19,23 @@ section{
 .corazon{
 display: flex;
 flex-direction: column;
-align-items: stretch;
+align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
 }
 
 .emojis {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
     margin: 0.1rem;
+    padding: 1em;
+    width: 22em;
 
 }
 
-button {
-    margin-top: 0.4rem;
-}
+
+
