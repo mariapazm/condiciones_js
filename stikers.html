@@ -8,40 +8,29 @@
 </head>
 <body>
     <section>
-        <form class="corazon" action="">
-            <div class="container" >
-                <figure class="emojis">
-                    <img src="assets/img/lana_corazon.svg" alt="">
-                        <input id="amarillo" type="text">
-                </figure>
-                <figure class="emojis">
-                    <img src="assets/img/lanas.svg" alt="">
-                        <input id="morado" type="text">
-                </figure>
-                <figure class="emojis">
-                    <img src="assets/img/ovillo.svg" alt="">
-                        <input id="rosa" type="text">
-                </figure>
-            </div>
-            <button type="button" onclick="
-            valorAm = document.querySelector('#amarillo').value
-            valorMo = document.querySelector('#morado').value
-            valorRo= document.querySelector('#rosa').value
-            valorTotal =  Number(valorAm) + Number(valorMo) + Number(valorRo)
-            if ( valorTotal <=10) {
-                p = document.querySelector('p')
-                p.innerHTML = 'Llevas ' + valorTotal + ' stikers'
-            }
-     
-            else {
-                p = document.querySelector('p')
-                p.innerHTML = 'Levas demasiados stikers'
-            }
-            ">Verificar</button>
-             <p></p>
-            
-        </form>
+        <fieldset>
+            <legend>Elige tus stikers. Puedes llevar 10 en total.</legend>
+            <form class="corazon" action="">
+                <div class="container" >
+                    <figure class="emojis">
+                        <img src="assets/img/lana_corazon.svg" alt="Ilustración kawaii de ovillo de lana  amarillo en forma de corazón xon ojos y sonrisa, atravesado por un palillo">
+                            <input id="amarillo" type="number" placeholder="Cantidad de stikers">
+                    </figure>
+                    <figure class="emojis">
+                        <img src="assets/img/lanas.svg" alt="Ilustración kawaii de tres ovillos de lana uno sobre otro de colores rosado, naranja y morado con expresión sonriente, con un gancho de croquet">
+                            <input id="morado" type="number" placeholder="Cantidad de stikers">
+                    </figure>
+                    <figure class="emojis">
+                        <img src="assets/img/ovillo.svg" alt="Ilustración kawaii de ovillo de lana rosa con ojos, sonrisa  y dos palillos celestes">
+                            <input id="rosa" type="number" placeholder="Cantidad de stikers">
+                    </figure>
+                </div>
+                <button id="btn" type="button">Verificar</button>
+                 <p id="mensaje"></p>
+            </form>
+        </fieldset>
+
     </section>
-    
+  <script src="assets/js/stikers.js"></script>
 </body>
 </html>

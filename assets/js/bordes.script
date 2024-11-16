@@ -1,0 +1,12 @@
+const imagen =  document.querySelector('#imagen');
+imagen.classList;
+imagen.addEventListener('click', ()=>{
+    imagen.classList.toggle('margen')
+}
+);
+
+/*
+onclick="
+borde = document.querySelector('.img')
+borde.style.border='2px solid #B6174B'
+"*/

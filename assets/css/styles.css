@@ -1,4 +1,4 @@
-body {
+body{
     margin: 0;
     padding: 0;
 }
@@ -8,11 +8,18 @@ img{
     height: 16em;
     padding-bottom: 0.5rem;
     width: 22em;
+  
+}
+
+.margen{
+    border: 2px, solid, #B6174B;
 }
 
 section{
+    align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding-top: 2rem;
 }
 
@@ -35,6 +42,10 @@ align-items: center;
     padding: 1em;
     width: 22em;
 
+}
+span{
+    display: flex;
+    flex-direction: column;
 }
 
 
